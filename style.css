@@ -8,6 +8,7 @@
   /* background-color: #DFD0B8; */
   margin-bottom: 50px;
   border-radius: 5px;
+  overflow-y: scroll;
 }
 
 .title {
@@ -52,4 +53,10 @@ h1, h3, p {
 .about {
   margin-top:60px ;
   text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
