@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(189, 216, 239);
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    align-items: center center;
+  } 
