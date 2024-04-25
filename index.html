@@ -53,19 +53,25 @@
     </nav>
 
     <div class="container">
-      <h1 class="title text-center">Trending Minggu Ini</h1>
+      <h1 class="title text-center">Rekomendasi Manga Terbaik Yang Sudah Diadaptasi Menjadi Anime!</h1>
         <div id="render" class="flex">
         <div class="card rounded" style="width: 18rem;">
           <div class="img rounded">
-          <img src="https://i.pinimg.com/564x/3a/8c/63/3a8c63737ae2d94f9d4f09f477e3df34.jpg" class="card-img-top" alt="...">
+            <img src="https://i.pinimg.com/564x/3a/8c/63/3a8c63737ae2d94f9d4f09f477e3df34.jpg" class="card-img-top" alt="...">
+            <div class="overlay">
+              <div class="text">Naruto Shipuden</div>
+            </div>
           </div>
           <div class="card-body ">
             <div class="judul">
             <h3>Naruto Shipudden</h3>
             </div>
-            <div class="desciption">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
+            <div class="keterangan">
+              <span>4.5</span>
+              </div>
+              <div class="desciption">
+                <p class="card-text">Genre: </p>
+              </div>
           <div class="d-flex justify-content-evenly jarak">
             <div class="text-center ">
             <a href="#" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
@@ -196,7 +202,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" onclick="simpanEdit()">Save changes</button>
       </div>
     </div>
   </div>
