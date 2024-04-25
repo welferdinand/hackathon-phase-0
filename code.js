@@ -11,17 +11,18 @@ function render(array) {
     listKomik.innerHTML += `<div class="card rounded" style="width: 18rem;">
     <div class="img rounded">
     <img id="coverImage" src="${imgCover}" class="card-img-top" alt="...">
+    <div class="overlay">
+              <div class="text">${judul}</div>
+            </div>
     </div>
     <div class="card-body ">
-      <div class="judul">
-      <h3>${judul}</h3>
-      </div>
       <div class="desciption">
+      <span><a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="gold" viewBox="0 1 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg></a>${rating}</span>
       <p class="card-text">Genre: ${genres}</p>
       </div>
-      <div class="rating">
-      <img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-one-stars-rating-png-png-image_10262742.png" alt="">
-      </div>
+      
     <div class="d-flex justify-content-evenly jarak">
     <div class="text-center " onclick="editAnime(${id})">
     <a href="#" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16" >
@@ -112,13 +113,13 @@ function editAnime(id) {
   inputJudul.value = komikYangDiEdit.judul;
   let inputDeskrip = document.getElementById("message-text");
   inputDeskrip.value = komikYangDiEdit.genres;
-  let inputImg = document.getElementById("coverImage");
-  // inputImg = komikYangDiEdit.imgCover;
+  let inputImg = document.getElementById("basic-url");
+  inputImg.value = komikYangDiEdit.imgCover;
 }
 
 function simpanEdit() {
   let idNow = Number(localStorage.getItem("idEdit"));
-  let inputImg = document.getElementById("coverImage");
+  //let inputImg = document.getElementById("coverImage");
   // inputImg = komikYangDiEdit.imgCover;
 
   let inputJudulValue = document.getElementById("recipient-name").value;
