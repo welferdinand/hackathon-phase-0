@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+/* body {
+  background-color: black;
+} */
+
 .container {
   margin-top: 60px;
   /* background-color: #DFD0B8; */
@@ -20,9 +24,23 @@
 h1, h3, p {
   color: #3C5B6F;
 }
+h3 {
+  font-size: 24px;
+  /* color: white; */
+}
+
+p{
+  font-size: 16px;
+}
 
 .card {
   margin-bottom: 10px;
+}
+
+.img {
+  width: 100%;
+  background-color: black;
+  height: 400px;
 }
 
 .img {
@@ -47,7 +65,19 @@ h1, h3, p {
 .card-body a {
   color: #DFD0B8;
   align-items: center;
-  background-color: #3C5B6F;
+  /* background-color: #3C5B6F; */
+}
+
+.judul {
+  width: 100%;
+  height: 80px;
+  /* background-color: black; */
+}
+
+.description {
+  width: 100%;
+  height: 100px;
+  /* background-color: pink; */
 }
 
 .about {
@@ -59,4 +89,9 @@ h1, h3, p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.jarak{
+  margin-top: 10px;
+  margin-bottom: 10pxs;
 }
