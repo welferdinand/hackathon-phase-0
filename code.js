@@ -19,6 +19,9 @@ function render(array) {
       <div class="desciption">
       <p class="card-text">Genre: ${genres}</p>
       </div>
+      <div class="rating">
+      <img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-one-stars-rating-png-png-image_10262742.png" alt="">
+      </div>
     <div class="d-flex justify-content-evenly jarak">
     <div class="text-center " onclick="editAnime(${id})">
     <a href="#" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16" >
